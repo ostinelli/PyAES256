@@ -1,0 +1,25 @@
+AES-256 cryptographic library for Python.
+=========================================
+
+This is a basic encryption AES-256 library for Python. Currently, only the
+ANSI X.923 byte padding is supported.
+  
+An example usage of the module is:
+>>> import aes256
+>>> key = "aserghjerg4w5ygb8JHBr8ySuhrergiE"
+>>> encrypted = aes256.encrypt("My testing clear text", key)
+>>> decrypted = aes256.decrypt(encrypted, key)
+>>>> print "decrypted: %s" % decrypted
+My testing clear text
+
+
+Installation
+============
+
+The toolkit is written and tested using Python 2.6, though it should
+also work with previous versions of Python 2.x.
+
+The modules are packaged using the Distutils, so you can simply run
+"python setup.py build" to build the package, and "python setup.py
+install" to install it.
+
